@@ -118,9 +118,9 @@ After you've completed the FIXME, run the following command
 $ python3 runtimes.py --max_x=22
 ```
 and copy/paste the resulting table into this README file below this line.
-
-|  timsort   |  merge_sorted |   quick_sorted    |
-|------------------------------------------------------|
++------------+---------------+-------------------------+
+|  timsort   |  merge_sorted |      quick_sorted       |
++------------+---------------+-------------------------+
 |  2.98e-06  |   1.96e-06    |  1.73225998878479e-06   |
 |  1.89e-06  |   6.69e-06    |  8.177012205123901e-06  |
 |  1.83e-06  |   1.10e-05    |  1.1514872312545776e-05 |
@@ -144,7 +144,7 @@ and copy/paste the resulting table into this README file below this line.
 |  3.83e-01  |   6.95e+00    |  9.407228827476501      |
 |  9.43e-01  |   1.54e+01    |  20.93630564585328      |
 |  2.13e+00  |   3.25e+01    |  48.25029530003666      |
-
++------------+---------------+-------------------------+
 You should observe that python's built-in sort function is 10-100x faster than yours.
 All functions have the same wort-case asymptotic complexity (i.e. $\Theta(n \log n)$),
 but python's built-in sorting function uses lots of optimization tricks to achieve this extra speedup.
