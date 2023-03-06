@@ -238,6 +238,31 @@ then rerun the command above to generate a markdown table of runtimes.
 Copy/paste the table into the README file below this line.
 
 <!-- add the table here -->
+|                | `timsort`     | `merge_sorted`| `quick_sorted`|
+| -------------- | ------------- | ------------- | ------------- |
+| `len(xs)=2**0` |   2.58e-06    |   1.82e-06    |   1.80e-06    |
+| `len(xs)=2**1` |   2.00e-06    |   6.65e-06    |   8.05e-06    |
+| `len(xs)=2**2` |   1.88e-06    |   1.17e-05    |   1.13e-05    |
+| `len(xs)=2**3` |   2.37e-06    |   2.35e-05    |   2.38e-05    |
+| `len(xs)=2**4` |   3.31e-06    |   4.80e-05    |   5.03e-05    |
+| `len(xs)=2**5` |   5.20e-06    |   1.04e-04    |   1.12e-04    |
+| `len(xs)=2**6` |   1.09e-05    |   2.32e-04    |   2.83e-04    |
+| `len(xs)=2**7` |   2.15e-05    |   5.12e-04    |   5.96e-04    |
+| `len(xs)=2**8` |   5.95e-05    |   1.31e-03    |   1.45e-03    |
+| `len(xs)=2**9` |   1.02e-04    |   2.48e-03    |   3.08e-03    |
+| `len(xs)=2**10` |   2.21e-04    |   5.42e-03    |   7.06e-03    |
+| `len(xs)=2**11` |   4.80e-04    |   1.18e-02    |   1.46e-02    |
+| `len(xs)=2**12` |   1.05e-03    |   2.56e-02    |   3.09e-02    |
+| `len(xs)=2**13` |   2.29e-03    |   5.49e-02    |   6.21e-02    |
+| `len(xs)=2**14` |   2.79e-03    |   6.70e-02    |   8.53e-02    |
+| `len(xs)=2**15` |   6.58e-03    |   1.57e-01    |   1.76e-01    |
+| `len(xs)=2**16` |   1.45e-02    |   3.07e-01    |   3.73e-01    |
+| `len(xs)=2**17` |   3.07e-02    |   6.41e-01    |   7.85e-01    |
+| `len(xs)=2**18` |   6.32e-02    |   1.36e+00    |   1.76e+00    |
+| `len(xs)=2**19` |   2.69e-01    |   3.84e+00    |   4.91e+00    |
+| `len(xs)=2**20` |   4.64e-01    |   8.25e+00    |   1.07e+01    |
+| `len(xs)=2**21` |   1.08e+00    |   1.69e+01    |   2.07e+01    |
+| `len(xs)=2**22` |   2.24e+00    |   3.28e+01    |   4.85e+01    |
 
 You should notice that the built-in `sorted` function ran much faster on this input,
 but your `merge_sorted` and `quick_sorted` functions have essentially the same runtimes.
