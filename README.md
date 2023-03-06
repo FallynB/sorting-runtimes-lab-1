@@ -12,7 +12,7 @@ You will need a partner for portions of this lab.
 
 Do not clone this repository.
 Instead:
-
+ 
 1. Create a new empty repo.
     Ensure that the name of your repo is different than the name of your partner's repo (so that you can fork it later).
 
