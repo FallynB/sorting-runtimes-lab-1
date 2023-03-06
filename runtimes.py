@@ -20,6 +20,11 @@ if __name__ == '__main__':
     parser.add_argument('--input', choices=['sorted', 'random'], default='random')
     args = parser.parse_args()
 
+     # print headers
+    print('|                | `timsort`     | `merge_sorted`| `quick_sorted`|')
+    print('| -------------- | ------------- | ------------- | ------------- |')
+
+
     # perform the runtime tests
     for x in range(0, args.max_x+1):
 
@@ -60,3 +65,9 @@ if __name__ == '__main__':
         # HINT:
         # use f-strings and a print statement that looks something like
         # print(f"| {runtimes['timsort']:0.2e} ")
+
+        col0 = f"`len(xs)=2**{x}`"
+        result_cols = ""
+        for runtime in runtimes:
+            result_cols += f"   {runtimes[runtime]:0.2e}    |"
+        print(f"| {col0} |{result_cols}")
