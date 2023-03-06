@@ -60,7 +60,7 @@ if __name__ == '__main__':
         # You will have to look up how to do this formatting.
         # In order to get a proper markdown table,
         # you will have to also print a header line somewhere else.
-        print(f'len(xs)=2**{x} runtimes={runtimes}')
+        # print(f'len(xs)=2**{x} runtimes={runtimes}')
 
         # HINT:
         # use f-strings and a print statement that looks something like
